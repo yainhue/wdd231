@@ -5,10 +5,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to my website!</title>
+    <meta description="Description PLACEHOLDER">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/styles-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-
+    <header>
+        <div class="logo_wrapper">
+            <div class="span_wrapper">
+                <img src="images/logo.svg" alt="ALT PLACEHOLDER">
+                <span id="site_name">Yain Huento</span>
+            </div>
+            <button class="hamburger_icon" aria-label="Open menu"></button>
+        </div>
+        <nav class="nav_list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">Final</a></li>
+        </nav>
+    </header>
+    <main>
+        <h1>Home</h1>
+        <div class="main_grid">
+            <section id="about_me">
+                <h2>About Me</h2>
+                <div class="section_content">
+                    <p>My name is Yain Huento. I'm known for being a positive, reliable, and trustworthy person. I have
+                        a strong passion for languages, and I’ve studied English for several years, including immersive
+                        experiences living with native speakers. I hold a C2 Proficiency level in English. I'm highly
+                        organized and value punctuality, always striving to complete tasks on time and provide
+                        exceptional service to clients. I’m confident that my skills, dedication, and talents would make
+                        me a valuable addition to your team. I’m committed to helping customers feel supported and
+                        satisfied.</p>
+                    <div class="filler"></div>
+                </div>
+            </section>
+            <section id="student_photo">
+                <h2>Student Photo</h2>
+                <div class="section_content" id="photo_div">
+                    <img src="images/profile.jpg" alt="Photo of the Student Yain Huento.">
+                </div>
+            </section>
+            <section id="courses">
+                <h2>Web Certificate Courses</h2>
+                <div class="buttons_wrapper">
+                    <button class="course_button" id="all_button">All</button>
+                    <button class="course_button" id="cse_button">CSE</button>
+                    <button class="course_button" id="wdd_button">WDD</button>
+                </div>
+                <div class="courses_wrapper">
+                </div>
+                <p id="total_credits">The total credits for course listed above is 6</p>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="socials_wrapper">
+            <img src="images/github.svg" alt="Github Icon">
+            <img src="images/linkedin.svg" alt="Linkedin Icon">
+            <img src="images/instagram3.svg" alt="Instagram Icon">
+        </div>
+        <div class="copyright_wrapper">
+            <p id="currentyear">the copyright symbol and current year that are written dynamically using JavaScript
+            </p>
+            <p id="lastmod_date">the date the page was last modified using JavaScript</p>
+        </div>
+    </footer>
 </body>
 
 </html>

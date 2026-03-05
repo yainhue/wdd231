@@ -1,0 +1,66 @@
+@media (min-width: 35em) {
+
+    /* HEADER */
+
+    .hamburger_icon {
+        display: none;
+    }
+
+    .nav_list {
+        display: flex;
+        background-color: var(--main-color);
+        padding: 0.3rem;
+    }
+
+    .nav_list li {
+        border: none;
+    }
+
+    /* MAIN */
+
+    .main_grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    #courses {
+        grid-column: 1 / span 2;
+
+    }
+
+    #about_me {
+        margin: 0 0.5rem 0 0;
+    }
+
+    #student_photo {
+        margin: 0 0 0 0.5rem;
+    }
+
+    section {
+        justify-content: flex-start;
+        height: 100%;
+    }
+
+    .section_content {
+        height: 100%;
+    }
+
+    /* MAIN - COURSES */
+
+    .buttons_wrapper {
+        justify-content: space-evenly;
+    }
+
+    .course_button {
+        width: 100%;
+    }
+
+    .courses_wrapper {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .course_card {
+        width: 100%
+    }
+}
