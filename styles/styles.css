@@ -60,6 +60,7 @@
 
 .nav_list {
     display: none;
+    padding: 0;
 }
 
 .nav_list_open {
