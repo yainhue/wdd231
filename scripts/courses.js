@@ -1,6 +1,8 @@
 const allButton = document.querySelector("#all_button");
 const cseButton = document.querySelector("#cse_button");
 const wddButton = document.querySelector("#wdd_button");
+const coursesWrapper = document.querySelector(".courses_wrapper")
+const creditCounter = document.querySelector("#total_credits")
 
 // courses array
 const courses = [
@@ -83,7 +85,7 @@ const courses = [
     }
 ]
 
-const coursesWrapper = document.querySelector(".courses_wrapper")
+
 function createCards(courses) {
     // clear previous cards
     coursesWrapper.innerHTML = "";
@@ -112,18 +114,30 @@ function createCards(courses) {
     });
 }
 
+function displayCredits(courses) {
+    total = 0
+    courses.forEach((t) => {
+        total += t.credits
+    });
+    creditCounter.textContent = `The total credits for course listed above is ${total}`;
+}
+
 createCards(courses);
+displayCredits(courses)
 
 // filter the cards
 
 allButton.addEventListener("click", () => {
     createCards(courses)
+    displayCredits(courses)
 })
 
 cseButton.addEventListener("click", () => {
     createCards(courses.filter(course => course.subject == "CSE"));
+    displayCredits(courses.filter(course => course.subject == "CSE"));
 })
 
 wddButton.addEventListener("click", () => {
     createCards(courses.filter(course => course.subject == "WDD"));
+    displayCredits(courses.filter(course => course.subject == "WDD"));
 })
