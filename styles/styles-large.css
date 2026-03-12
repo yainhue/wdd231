@@ -2,6 +2,10 @@
 
     /* HEADER */
 
+    header {
+        display: flex;
+    }
+
     .hamburger_icon {
         display: none;
     }

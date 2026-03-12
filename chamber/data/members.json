@@ -1,0 +1,82 @@
+{
+  "member1": {
+    "id": "1",
+    "image": "images/member1.webp",
+    "name": "Candice Geralach CPA",
+    "since": "2004",
+    "rank": "Gold",
+    "address": "2888 Loker Ave E, Ste. 219, Carlsbad, CA 92010",
+    "phone": "(760) 208-5885",
+    "website": "https://www.candicegeralach.com"
+  },
+  "member2": {
+    "id": "2",
+    "image": "images/member2.webp",
+    "name": "BrightWave Marketing",
+    "since": "2010",
+    "rank": "Silver",
+    "address": "45 Ocean Blvd, Miami, FL 33139",
+    "phone": "(305) 555-1234",
+    "website": "https://www.brightwave.com"
+  },
+  "member3": {
+    "id": "3",
+    "image": "images/member3.webp",
+    "name": "GreenLeaf Organics",
+    "since": "2015",
+    "rank": "Member",
+    "address": "102 Maple Street, Portland, OR 97205",
+    "phone": "(503) 555-9876",
+    "website": "https://www.greenleaforganics.com"
+  },
+  "member4": {
+    "id": "4",
+    "image": "images/member4.webp",
+    "name": "Skyline Tech Solutions",
+    "since": "2008",
+    "rank": "Gold",
+    "address": "500 Innovation Drive, Austin, TX 78701",
+    "phone": "(512) 555-2468",
+    "website": "https://www.skylinetech.com"
+  },
+  "member5": {
+    "id": "5",
+    "image": "images/member5.webp",
+    "name": "Harmony Wellness Spa",
+    "since": "2012",
+    "rank": "Silver",
+    "address": "220 Serenity Lane, Sedona, AZ 86336",
+    "phone": "(928) 555-3344",
+    "website": "https://www.harmonyspa.com"
+  },
+  "member6": {
+    "id": "6",
+    "image": "images/member6.webp",
+    "name": "Urban Eats Bistro",
+    "since": "2018",
+    "rank": "Member",
+    "address": "77 Market Street, San Francisco, CA 94103",
+    "phone": "(415) 555-7788",
+    "website": "https://www.urbaneatsbistro.com"
+  },
+  "member7": {
+    "id": "7",
+    "image": "images/member7.webp",
+    "name": "Blue Horizon Travel",
+    "since": "2001",
+    "rank": "Gold",
+    "address": "900 Sunset Ave, Los Angeles, CA 90012",
+    "phone": "(213) 555-9090",
+    "website": "https://www.bluehorizontravel.com"
+  },
+  "member8": {
+    "id": "8",
+    "image": "images/member8.webp",
+    "name": "NovaLearn Academy",
+    "since": "2016",
+    "rank": "Silver",
+    "address": "12 Knowledge Park, Boston, MA 02115",
+    "phone": "(617) 555-4422",
+    "website": "https://www.novalearnacademy.com"
+  }
+}
