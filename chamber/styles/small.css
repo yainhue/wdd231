@@ -73,6 +73,7 @@ header {
 .nav-list {
     display: none;
     padding: 0;
+    color: white;
 }
 
 .nav-list-open {

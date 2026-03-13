@@ -100,7 +100,7 @@
     .toggle-view {
         display: block;
         background-color: gainsboro;
-        color: var(gray);
+        /* color: gray; */
         font-size: x-large;
         border: none;
         padding: 0.1rem 0.5rem 0.5rem;
