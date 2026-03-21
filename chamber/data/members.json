@@ -7,7 +7,9 @@
     "rank": "Gold",
     "address": "2888 Loker Ave E, Ste. 219, Carlsbad, CA 92010",
     "phone": "(760) 208-5885",
-    "website": "https://www.candicegeralach.com"
+    "website": "www.candicegeralach.com",
+    "tagline": "Trusted tax expertise",
+    "email": "info@candicegeralach.com"
   },
   "member2": {
     "id": "2",
@@ -17,7 +19,9 @@
     "rank": "Silver",
     "address": "45 Ocean Blvd, Miami, FL 33139",
     "phone": "(305) 555-1234",
-    "website": "https://www.brightwave.com"
+    "website": "www.brightwave.com",
+    "tagline": "Ride the wave of growth",
+    "email": "contact@brightwave.com"
   },
   "member3": {
     "id": "3",
@@ -27,7 +31,9 @@
     "rank": "Member",
     "address": "102 Maple Street, Portland, OR 97205",
     "phone": "(503) 555-9876",
-    "website": "https://www.greenleaforganics.com"
+    "website": "www.greenleaforganics.com",
+    "tagline": "Fresh, natural living",
+    "email": "hello@greenleaforganics.com"
   },
   "member4": {
     "id": "4",
@@ -37,7 +43,9 @@
     "rank": "Gold",
     "address": "500 Innovation Drive, Austin, TX 78701",
     "phone": "(512) 555-2468",
-    "website": "https://www.skylinetech.com"
+    "website": "www.skylinetech.com",
+    "tagline": "Innovating your horizon",
+    "email": "support@skylinetech.com"
   },
   "member5": {
     "id": "5",
@@ -47,7 +55,9 @@
     "rank": "Silver",
     "address": "220 Serenity Lane, Sedona, AZ 86336",
     "phone": "(928) 555-3344",
-    "website": "https://www.harmonyspa.com"
+    "website": "www.harmonyspa.com",
+    "tagline": "Relax, renew, restore",
+    "email": "info@harmonyspa.com"
   },
   "member6": {
     "id": "6",
@@ -57,7 +67,9 @@
     "rank": "Member",
     "address": "77 Market Street, San Francisco, CA 94103",
     "phone": "(415) 555-7788",
-    "website": "https://www.urbaneatsbistro.com"
+    "website": "www.urbaneatsbistro.com",
+    "tagline": "Flavor in every bite",
+    "email": "reservations@urbaneatsbistro.com"
   },
   "member7": {
     "id": "7",
@@ -67,7 +79,9 @@
     "rank": "Gold",
     "address": "900 Sunset Ave, Los Angeles, CA 90012",
     "phone": "(213) 555-9090",
-    "website": "https://www.bluehorizontravel.com"
+    "website": "www.bluehorizontravel.com",
+    "tagline": "Explore beyond limits",
+    "email": "booking@bluehorizontravel.com"
   },
   "member8": {
     "id": "8",
@@ -77,6 +91,8 @@
     "rank": "Silver",
     "address": "12 Knowledge Park, Boston, MA 02115",
     "phone": "(617) 555-4422",
-    "website": "https://www.novalearnacademy.com"
+    "website": "www.novalearnacademy.com",
+    "tagline": "Igniting minds, shaping futures",
+    "email": "admissions@novalearnacademy.com"
   }
 }

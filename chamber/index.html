@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moreno Chamber of Commerce</title>
+    <meta name=description
+        content="Explore Moreno Chamber of Commerce Directory highlighting local businesses, contacts, and community growth">
+    <meta name=author content="Yain Huento">
+    <meta property="og:title" content="Moreno Chamber of Commerce Directory">
+    <meta property="og:description"
+        content="Explore Moreno Chamber Directory highlighting local businesses, contacts, and community growth">
+    <meta property="og:image" content="https://yainhue.github.io/wdd231/chamber/images/ogimage.webp">
+    <meta property="og:url" content="https://yainhue.github.io/wdd231/chamber/directory.html">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/members.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <link rel="icon" href="images/favicon.png">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+</head>
+
+<!-- CHECKEAR PLACEHOLDERS! Y EXAMPLE -->
+<!-- QUE ES ESO DE KEYNOTE TICKETS EN hero?! -->
+
+<body>
+    <header class="header-nomargin">
+        <div class="logo-wrapper">
+            <div class="span-wrapper">
+                <img src="images/logo.svg" alt="Logo of Moreno Chamber of Commerce" class="logo">
+                <span id="site-name">Moreno Chamber of Commerce</span>
+            </div>
+            <button class="hamburger-icon" aria-label="Open menu"></button>
+        </div>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="./index.html" id="active">Home</a></li>
+                <li><a href="./directory.html">Directory</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Discover</a></li>
+            </ul>
+            <a href="#"></a>
+        </nav>
+    </header>
+    <main>
+        <div class="hero-wrapper">
+            <img src="images/hero.webp" alt="Urban park with central statue" class="hero-img">
+            <button aria-label="Join Now!" class="cta-button">Join Now!</button>
+        </div>
+        <h1>Home</h1>
+        <div class="cards-flex">
+            <div class="card-wrapper" id="events-wrapper"> <!--Events-->
+                <h2 class="card-h2">Events</h2>
+                <div class="events-contents">
+                    <img src="https:placecats.com/200/50" alt="">
+                    <div class="event-info">
+                        <h3>Grand Opening: Moreno Tech Hub</h3>
+                        <p>The Chamber celebrates the launch of a new technology hub, bringing innovation and job
+                            opportunities to the community.</p>
+                        <p><strong>Date:</strong> April 12, 2026</p>
+                    </div>
+                    <div class="event-info">
+                        <h3>Community Clean-Up Day</h3>
+                        <p>Members join forces to beautify Moreno’s parks and streets, strengthening civic pride and
+                            environmental responsibility.</p>
+                        <p><strong>Date:</strong> June 15, 2026</p>
+                    </div>
+                    <!-- <div class="event-info">
+                        <h3>Small Business Workshop Series</h3>
+                        <p>Free training sessions hosted by the Chamber to help small business owners improve marketing,
+                            finance, and digital skills.</p>
+                        <p><strong>Date:</strong> July 20, 2026</p>
+                    </div> -->
+                </div>
+            </div>
+            <div class="card-wrapper" id="current-wrapper"> <!-- Current Weather-->
+                <h2 class="card-h2">Current Weather</h2>
+                <div class="current-weather-contents">
+                    <img src="images/favicon.png" alt="Chamber of Commerce of Moreno" id="weather-icon">
+                    <div class="current-weather-data">
+                        <p id="weather-temp">-</p>
+                        <p id="weather-desc">-</p>
+                        <p>High:<span id="weather-high">-</span></p>
+                        <p>Low:<span id="weather-low">-</span></p>
+                        <p>Humidity:<span id="weather-humi">-</span></p>
+                        <p>Sunrise:<span id="weather-sunrise">-</span></p>
+                        <p>Sunset:<span id="weather-sunset">-</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-wrapper" id="forecast-wrapper"> <!--Weather Forecast-->
+                <h2 class="card-h2">Weather Forecast</h2>
+                <div class="weather-forecast-contents">
+                    <p>Today: <span id="weather-day1-temp">-</span></p>
+                    <p><span id="weather-day2">-: </span><span id="weather-day2-temp">-</span></p>
+                    <p><span id="weather-day3">-: </span><span id="weather-day3-temp">-</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="business-wrapper"> <!--Spotlights-->
+            <!-- <div class="business-card"> EXAMPLE
+                <h3 class="business-name">Place Cats²</h3>
+                <p class="business-tagl">Cats forever and ever</p>
+                <div class="business-line"></div>
+                <div class="business-info">
+                    <img src="https:placecats.com/100/100" alt="PLACEHOLDER" class="business-logo">
+                    <div class="business-contact">
+                        <p>EMAIL: <span class="business-email">cats@gmail.com</span></p>
+                        <p>PHONE: <span class="business-email">800-555-1234</span></p>
+                        <p>URL: <span class="business-email">placecats.com</span></p>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </main>
+    <footer>
+        <div class="footer-contact">
+            <p><strong>Moreno Chamber of Commerce</strong></p>
+            <p>Dr. Eduardo Asconape 51</p>
+            <p>Moreno, Provincia de Buenos Aires</p>
+            <p>info@moreno.gob</p>
+            <p>0237 466-9100</p>
+        </div>
+        <div class="socials-wrapper">
+            <a href="#">
+                <img src="images/youtube.svg" alt="Youtube Icon">
+            </a>
+            <a href="#">
+                <img src="images/twitter.svg" alt="Twitter Icon">
+            </a>
+            <a href="#">
+                <img src="images/linkedin.svg" alt="Linkedin Icon">
+            </a>
+        </div>
+        <div class="copyright-wrapper">
+            <p>WDD231 Class Project</p>
+            <p>Yain Huento</p>
+            <p id="currentyear">currentyear</p>
+            <p id="lastmod-date">lastmod-date</p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,5 +1,6 @@
 const toggleButton = document.querySelector(".toggle-view");
-
+const mainGrid = document.querySelector(".main-grid")
+const businessWrapper = document.querySelector(".business-wrapper")
 const members = [];
 
 const fetchMembers = async () => {
@@ -9,7 +10,6 @@ const fetchMembers = async () => {
     return members
 }
 
-const mainGrid = document.querySelector(".main-grid")
 function CreaterMemCards(members) {
     // clear previous cards
     // mainGrid.innerHTML = "";
@@ -113,15 +113,132 @@ function CreaterMemCards(members) {
     console.log("=== cards succesfuly created ===")
 }
 
-const displayMembers = async () => {
-    const members = await fetchMembers();
-    CreaterMemCards(members);
+function CreateBusCards(members) {
+
+    // create cards
+    console.log("=== creating cards ===")
+    let done = []
+    for (let i = 0; i < 3;) {
+        let t = null;
+        while (t == null) {
+            let keys = Object.keys(members);
+            let randIndex = Math.floor(Math.random() * keys.length);
+            let selection = keys[randIndex];
+            if (!done.includes(selection)) {
+                console.log(`=== trying member${selection} ===`)
+                if (members[selection].rank == "Gold" || members[selection].rank == "Silver") {
+                    t = members[selection];
+                    done.push(selection)
+                    // DEBUG
+                    console.log(`=== ${selection} is a ${members[selection].rank} member ===`)
+                }
+
+                // DEBUG:
+                else {
+                    console.log(`=== ${selection} is a ${members[selection].rank} member ===`)
+                }
+            }
+        }
+
+
+        // DEBUG:
+        console.log(`=== creating card ${i} ===`)
+
+        // ----
+
+        // card-contents
+        const cardDiv = document.createElement("div");
+        cardDiv.className = ("business-card");
+        businessWrapper.appendChild(cardDiv);
+
+        // ----
+
+        // h3
+        const h3 = document.createElement("h3");
+        h3.textContent = `${t.name}`;
+        cardDiv.appendChild(h3);
+
+        // tagline
+        const tagline = document.createElement("p");
+        tagline.textContent = `${t.tagline}`;
+        tagline.className = ("business-tagl");
+        cardDiv.appendChild(tagline);
+
+        // rank
+        const rank = document.createElement("p");
+        rank.textContent = `${t.rank}`;
+        rank.className = ("business-rank");
+        cardDiv.appendChild(rank);
+
+        // line
+        const cardLine = document.createElement("div");
+        cardLine.className = ("business-line");
+        cardDiv.appendChild(cardLine);
+
+        // ----
+
+        // business-info
+        const cardBusInfo = document.createElement("div");
+        cardBusInfo.className = ("business-info");
+        cardDiv.appendChild(cardBusInfo);
+
+        // image
+        const image = document.createElement("img");
+        Object.assign(image, {
+            src: t.image,
+            alt: `Logo of ${t.name}`,
+            loading: "lazy"
+        });
+        image.className = ("business-logo");
+        cardBusInfo.appendChild(image);
+
+        // ----
+
+        // business-contact
+        const cardBusContact = document.createElement("div");
+        cardBusContact.className = ("business-contact");
+        cardBusInfo.appendChild(cardBusContact);
+
+        // EMAIL
+        const email = document.createElement("p");
+        email.innerHTML = `EMAIL: <span class="business-email">${t.email}</span>`;
+        cardBusContact.appendChild(email);
+
+        // PHONE
+        const phone = document.createElement("p");
+        phone.innerHTML = `PHONE: <span class="business-email">${t.phone}</span>`;
+        cardBusContact.appendChild(phone);
+
+        // URL
+        const url = document.createElement("p");
+        url.innerHTML = `URL: <span class="business-email">${t.website}</span>`;
+        cardBusContact.appendChild(url);
+
+        i++
+    };
+    // };
+
+    console.log("=== cards succesfuly created ===")
 }
 
-displayMembers();
+const displayMembers = async () => {
+    if (mainGrid != null) {
+        console.log("=== mainGrid != null ===")
+        const members = await fetchMembers();
+        CreaterMemCards(members);
+    }
+    else if (businessWrapper != null) {
+        console.log("=== businessWrapper != null ===")
+        const members = await fetchMembers();
+        CreateBusCards(members);
+    }
+}
 
-toggleButton.addEventListener("click", () => {
-    toggleButton.classList.toggle("toggle-view-open");
-    mainGrid.classList.toggle("main-grid-list")
-    // navImg.classList.toggle("nav-img-open");
-});
+if (toggleButton != null) {
+    toggleButton.addEventListener("click", () => {
+        toggleButton.classList.toggle("toggle-view-open");
+        mainGrid.classList.toggle("main-grid-list")
+    })
+};
+
+displayMembers();
