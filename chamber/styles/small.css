@@ -5,6 +5,7 @@
     --secondary-color: rgb(238, 237, 237);
     --separator: rgb(179, 177, 177);
     --button-hover: #01386e;
+
 }
 
 * {
@@ -71,6 +72,14 @@ header {
     content: "X";
 }
 
+nav {
+    display: none;
+}
+
+.nav-open {
+    display: block;
+}
+
 .nav-list {
     display: none;
     padding: 0;
@@ -121,7 +130,10 @@ header {
 /* MAIN - HOME */
 
 .hero-img {
-    width: 300px;
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    margin: 0px;
 }
 
 .hero-wrapper {
@@ -138,7 +150,7 @@ header {
     border: none;
     border-radius: 10%;
     top: 80%;
-    left: 70%;
+    left: 50%;
     /* width: 23%; */
     transform: translate(-50%, -50%);
 }
@@ -150,14 +162,8 @@ header {
     font-weight: bold;
 }
 
-/* main {
-    display: grid;
-    grid-template-columns: 1fr;
-} */
-
 .cards-flex {
     display: block;
-    /* width: 100%; */
 }
 
 .card-wrapper {
@@ -167,7 +173,6 @@ header {
 
 .card-wrapper h2 {
     background-color: var(--main-color);
-    /* width: 100%; */
     color: white;
     text-align: center;
     font-weight: 300;
@@ -288,8 +293,6 @@ header {
 
 .business-contact {
     font-size: small;
-    /* max-width: 100%;
-    overflow-wrap: break-word; */
 }
 
 .business-contact p {
