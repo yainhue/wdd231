@@ -8,14 +8,14 @@
     <meta name=description
         content="Explore Moreno Chamber of Commerce Directory highlighting local businesses, contacts, and community growth">
     <meta name=author content="Yain Huento">
-    <meta property="og:title" content="Moreno Chamber of Commerce Directory">
+    <meta property="og:title" content="Join the Moreno Chamber of Commerce">
     <meta property="og:description"
         content="Explore Moreno Chamber Directory highlighting local businesses, contacts, and community growth">
     <meta property="og:image" content="https://yainhue.github.io/wdd231/chamber/images/ogimage.webp">
     <meta property="og:url" content="https://yainhue.github.io/wdd231/chamber/directory.html">
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
-    <script src="scripts/members.js" defer></script>
+    <script src="scripts/form.js" defer></script>
     <link rel="icon" href="images/favicon.png">
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/small.css">
@@ -38,18 +38,57 @@
         <nav id="base-nav">
             <ul class="nav-list">
                 <li><a href="./index.html">Home</a></li>
-                <li><a href="./directory.html" id="active">Directory</a></li>
-                <li><a href="./join.html">Join</a></li>
+                <li><a href="./directory.html">Directory</a></li>
+                <li><a href="./join.html" id="active">Join</a></li>
                 <li><a href="#">Discover</a></li>
             </ul>
             <a href="#"></a>
         </nav>
     </header>
     <main>
-        <h1 class="h1-directory">Directory</h1>
-        <div class="card-separator"></div>
-        <button class="toggle-view" aria-label="Toggle member view"></button>
-        <div class="main-grid">
+        <div class="membership-wrapper">
+            <h2>Membership Levels</h2>
+            <div class="membership-containers">
+                <div class="membership-card">
+                    <h3>Non-Profit</h3>
+                    <div class="membership-info">
+                        <p>Designed for non-profit organizations seeking community support and essential resources.</p>
+                        <div class="card-line"></div>
+                        <button class="membership-btn">View Benefits</button>
+                    </div>
+                </div>
+                <div class="membership-card">
+                    <h3>Bronze</h3>
+                    <div class="membership-info">
+                        <p>An entry-level membership for individuals or small businesses starting their journey.</p>
+                        <div class="card-line"></div>
+                        <button class="membership-btn">View Benefits</button>
+                    </div>
+                </div>
+                <div class="membership-card">
+                    <h3>Silver</h3>
+                    <div class="membership-info">
+                        <p>Tailored for members who want greater recognition and expanded advantages.</p>
+                        <div class="card-line"></div>
+                        <button class="membership-btn">View Benefits</button>
+                    </div>
+                </div>
+                <div class="membership-card">
+                    <h3>Gold</h3>
+                    <div class="membership-info">
+                        <p>The premium level for those seeking maximum exposure and exclusive privileges.</p>
+                        <div class="card-line"></div>
+                        <button class="membership-btn">View Benefits</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cta-wrapper"><img src="https:placecats.com/100/100" alt="PLACEHOLDER" class="cta-image">
+            <div class="cta-container">
+                <h2>Sign up today!</h2>
+                <div class="card-line"></div>
+                <p class="cta-text">—connect, learn, and lead with us.</p>
+            </div>
         </div>
     </main>
     <footer>
