@@ -6,7 +6,6 @@ hamButton.addEventListener("click", () => {
     navigation.classList.toggle("nav-list-open");
     nav.classList.toggle("nav-open");
     hamButton.classList.toggle("hamburger-icon-open");
-    // navImg.classList.toggle("nav-img-open");
 });
 
 
