@@ -16,6 +16,7 @@
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
     <script src="scripts/form.js" defer></script>
+    <script src="scripts/modals.js" defer></script>
     <link rel="icon" href="images/favicon.png">
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/small.css">
@@ -25,6 +26,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
 </head>
+
+<!-- PENSAR ALGO MEJOR PARA H1 -->
 
 <body>
     <header class="header-nomargin">
@@ -46,50 +49,110 @@
         </nav>
     </header>
     <main>
-        <div class="membership-wrapper">
-            <h2>Membership Levels</h2>
-            <div class="membership-containers">
-                <div class="membership-card">
-                    <h3>Non-Profit</h3>
-                    <div class="membership-info">
-                        <p>Designed for non-profit organizations seeking community support and essential resources.</p>
-                        <div class="card-line"></div>
-                        <button class="membership-btn">View Benefits</button>
+        <h1 id="form-h1">Join us</h1>
+        <div class="main-grid-join">
+            <div class="form-wrapper">
+                <h2>Member Registration</h2>
+                <form method="get" action="thankyou.html">
+                    <input type="hidden" id="timestamp" name="timestamp">
+                    <h3>Personal information</h3>
+                    <label>First Name<span class="required"> *</span><input type="text" name="first" required
+                            autocomplete="given-name" title="Your First Name"></label>
+                    <label>Last Name<span class="required"> *</span><input type="text" name="last" required
+                            autocomplete="family-name" title="Your Last Name"></label>
+                    <label>Cell Phone<span class="required"> *</span><input type="tel" name="phone" autocomplete="tel"
+                            title="A Phone Number with dashes" placeholder="987-555-1234"></label>
+                    <label>Email<span class="required"> *</span><input type="email" name="email" required
+                            placeholder="john89@gmail.com" title="Your Email" autocomplete="email"></label>
+
+                    <div class="card-separator"></div>
+
+                    <h3>Organizational information</h3>
+                    <label>Organization Name<span class="required"> *</span><input type="text" name="org-name" required
+                            autocomplete="organization" title="Your Organization Name"></label>
+                    <label>Organization Title<span class="required"> *</span><input type="text" name="org-title"
+                            required autocomplete="organization-title" title="Your Organization Title"
+                            pattern="^[A-Za-z\- ]{7,}$s"></label>
+                    <label>Business Description<span class="required"> *</span>
+                        <textarea id="business-description" name="business-description" rows="4"
+                            title="Business Description" required></textarea></label>
+
+                    <label>Membership Level<span class="required"> *</span>
+                        <select id="membership-lvl" name="membership-lvl" required>
+                            <option value="" disabled selected>- Select Membership Level</option>
+                            <option value="np">Non-Profit</option>
+                            <option value="bronze">Bronze</option>
+                            <option value="silver">Silver</option>
+                            <option value="gold">Gold</option>
+                        </select></label>
+
+                    <input type="submit" value="Sign Up">
+
+                </form>
+            </div>
+            <div class="membership-wrapper">
+                <h2>Membership Levels</h2>
+                <div class="membership-containers">
+                    <div class="membership-card">
+                        <h3>Non-Profit</h3>
+                        <div class="business-line"></div>
+                        <div class="membership-info">
+                            <p>Designed for non-profit organizations seeking community support and essential resources.
+                            </p>
+                            <div class="card-line"></div>
+                            <button class="membership-btn" id="noprof-btn">View Benefits</button>
+                        </div>
+                    </div>
+                    <div class="membership-card">
+                        <h3 id="bronze">Bronze</h3>
+                        <div class="business-line"></div>
+                        <div class="membership-info">
+                            <p>An entry-level membership for individuals or small businesses starting their journey.</p>
+                            <div class="card-line"></div>
+                            <button class="membership-btn" id="bronze-btn">View Benefits</button>
+                        </div>
+                    </div>
+                    <div class="membership-card">
+                        <h3 id="silver">Silver</h3>
+                        <div class="business-line"></div>
+                        <div class="membership-info">
+                            <p>Tailored for members who want greater recognition and expanded advantages.</p>
+                            <div class="card-line"></div>
+                            <button class="membership-btn" id="silver-btn">View Benefits</button>
+                        </div>
+                    </div>
+                    <div class="membership-card">
+                        <h3 id="gold">Gold</h3>
+                        <div class="business-line"></div>
+                        <div class="membership-info">
+                            <p>The premium level for those seeking maximum exposure and exclusive privileges.</p>
+                            <div class="card-line"></div>
+                            <button class="membership-btn" id="gold-btn">View Benefits</button>
+                        </div>
                     </div>
                 </div>
-                <div class="membership-card">
-                    <h3>Bronze</h3>
-                    <div class="membership-info">
-                        <p>An entry-level membership for individuals or small businesses starting their journey.</p>
-                        <div class="card-line"></div>
-                        <button class="membership-btn">View Benefits</button>
-                    </div>
-                </div>
-                <div class="membership-card">
-                    <h3>Silver</h3>
-                    <div class="membership-info">
-                        <p>Tailored for members who want greater recognition and expanded advantages.</p>
-                        <div class="card-line"></div>
-                        <button class="membership-btn">View Benefits</button>
-                    </div>
-                </div>
-                <div class="membership-card">
-                    <h3>Gold</h3>
-                    <div class="membership-info">
-                        <p>The premium level for those seeking maximum exposure and exclusive privileges.</p>
-                        <div class="card-line"></div>
-                        <button class="membership-btn">View Benefits</button>
+                <div class="cta-wrapper">
+                    <img src="images/join.webp" alt="PLACEHOLDER" class="cta-image">
+                    <div class="cta-container">
+                        <h2>Sign up today!</h2>
+                        <div class="business-line"></div>
+                        <p class="cta-text">—connect, learn, and lead with us.</p>
                     </div>
                 </div>
             </div>
+
         </div>
-        <div class="cta-wrapper"><img src="https:placecats.com/100/100" alt="PLACEHOLDER" class="cta-image">
-            <div class="cta-container">
-                <h2>Sign up today!</h2>
-                <div class="card-line"></div>
-                <p class="cta-text">—connect, learn, and lead with us.</p>
+        <dialog class="membership-modal">
+            <h2 class="membership-title">Modal Test</h2>
+            <button class="close-button">❌</button>
+            <div class="membership-wrapper">
+                <div class="membership-details">
+                    <p>PLACEHOLDER</p>
+                </div>
+                <img src="https:placecats/100/100.com" alt="PLACEHOLDER" class="membership-img">
             </div>
-        </div>
+
+        </dialog>
     </main>
     <footer>
         <div class="footer-contact">

@@ -129,6 +129,87 @@
         height: 150px;
     }
 
+    /* MAIN - JOIN */
+
+    .main-grid-join {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+        /* grid-template-rows: 1fr; */
+        /* display: flex;
+        flex-wrap: wrap */
+    }
+
+    .membership-wrapper {
+        padding: 0;
+        gap: 0;
+        flex-wrap: wrap;
+    }
+
+    .membership-wrapper h2 {
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
+
+    .membership-wrapper {
+        padding: 0;
+        gap: 0;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+
+    .membership-containers {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        @media (max-width: 1000px) {
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        }
+
+        margin: 0px;
+        gap: 2rem;
+    }
+
+    .cta-wrapper {
+        margin-top: 2rem;
+    }
+
+    form {
+
+        input[type=text],
+        input[type=tel],
+        input[type=date],
+        input[type=email],
+        select,
+        textarea {
+            width: 90%;
+        }
+
+        input[type=submit] {
+            width: 50%;
+        }
+
+    }
+
+
+    .cta-wrapper img {
+        width: 150px;
+        font-size: large;
+    }
+
+    .cta-wrapper p {
+        font-size: medium;
+    }
+
+    .cta-wrapper h2 {
+        margin: 0px;
+        font-size: x-large;
+    }
+
+    .cta-wrapper p {
+        font-size: medium;
+    }
+
     /* FOOTER */
 
     footer {
