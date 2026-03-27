@@ -211,6 +211,7 @@
     }
 
     .membership-modal-open {
+        max-width: 40%;
         width: 100%;
         left: 50%;
         top: 50%;

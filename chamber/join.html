@@ -27,8 +27,6 @@
         rel="stylesheet">
 </head>
 
-<!-- PENSAR ALGO MEJOR PARA H1 -->
-
 <body>
     <header class="header-nomargin">
         <div class="logo-wrapper">
@@ -53,7 +51,7 @@
         <div class="main-grid-join">
             <div class="form-wrapper">
                 <h2>Member Registration</h2>
-                <form method="get" action="thankyou.html">
+                <form method="get" action="thankyou.html" id="form">
                     <input type="hidden" id="timestamp" name="timestamp">
                     <h3>Personal information</h3>
                     <label>First Name<span class="required"> *</span><input type="text" name="first" required
@@ -71,8 +69,9 @@
                     <label>Organization Name<span class="required"> *</span><input type="text" name="org-name" required
                             autocomplete="organization" title="Your Organization Name"></label>
                     <label>Organization Title<span class="required"> *</span><input type="text" name="org-title"
-                            required autocomplete="organization-title" title="Your Organization Title"
-                            pattern="^[A-Za-z\- ]{7,}$s"></label>
+                            required autocomplete="organization-title"
+                            title="Only letters, hyphens, and spaces, minimum 7 characters."
+                            pattern="^[A-Za-z\- ]{7,}$"></label>
                     <label>Business Description<span class="required"> *</span>
                         <textarea id="business-description" name="business-description" rows="4"
                             title="Business Description" required></textarea></label>
@@ -93,7 +92,7 @@
             <div class="membership-wrapper">
                 <h2>Membership Levels</h2>
                 <div class="membership-containers">
-                    <div class="membership-card">
+                    <div class="membership-card" id="np-card">
                         <h3>Non-Profit</h3>
                         <div class="business-line"></div>
                         <div class="membership-info">
@@ -103,7 +102,7 @@
                             <button class="membership-btn" id="noprof-btn">View Benefits</button>
                         </div>
                     </div>
-                    <div class="membership-card">
+                    <div class="membership-card" id="bronze-card">
                         <h3 id="bronze">Bronze</h3>
                         <div class="business-line"></div>
                         <div class="membership-info">
@@ -112,7 +111,7 @@
                             <button class="membership-btn" id="bronze-btn">View Benefits</button>
                         </div>
                     </div>
-                    <div class="membership-card">
+                    <div class="membership-card" id="silver-card">
                         <h3 id="silver">Silver</h3>
                         <div class="business-line"></div>
                         <div class="membership-info">
@@ -121,7 +120,7 @@
                             <button class="membership-btn" id="silver-btn">View Benefits</button>
                         </div>
                     </div>
-                    <div class="membership-card">
+                    <div class="membership-card" id="gold-card">
                         <h3 id="gold">Gold</h3>
                         <div class="business-line"></div>
                         <div class="membership-info">
@@ -132,7 +131,8 @@
                     </div>
                 </div>
                 <div class="cta-wrapper">
-                    <img src="images/join.webp" alt="PLACEHOLDER" class="cta-image">
+                    <img src="images/join.webp" alt="Professional person working at desk with laptop in office."
+                        class="cta-image">
                     <div class="cta-container">
                         <h2>Sign up today!</h2>
                         <div class="business-line"></div>
@@ -143,13 +143,14 @@
 
         </div>
         <dialog class="membership-modal">
-            <h2 class="membership-title">Modal Test</h2>
+            <h2 class="membership-title">Membership</h2>
             <button class="close-button">❌</button>
             <div class="membership-wrapper-mod">
                 <div class="membership-details">
-                    <p>PLACEHOLDER</p>
+                    <p>Membership details here</p>
                 </div>
-                <img src="https:placecats/100/100.com" alt="PLACEHOLDER" class="membership-img">
+                <img src="images/join.webp" alt="Professional person working at desk with laptop in office."
+                    class="membership-img">
             </div>
 
         </dialog>

@@ -541,7 +541,7 @@ input:-webkit-autofill {
     border: 1px solid rgb(0 0 0 / 50%);
     border-radius: .25rem;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
-    max-width: 40%;
+    max-width: 90%;
 }
 
 .membership-wrapper-mod {
@@ -602,6 +602,118 @@ input:-webkit-autofill {
 
 .cta-wrapper p {
     font-size: medium;
+}
+
+/* @keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+} */
+
+/* .membership-card {
+    animation-name: fadeIn;
+    animation-duration: 3s;
+} */
+
+@keyframes fadeInNp {
+    0% {
+        background-color: var(--secondary-color);
+        margin: 20px;
+        padding: 20px;
+    }
+
+    50% {
+        background-color: #4a84be36;
+    }
+
+    100% {
+        background-color: var(--secondary-color);
+        margin: 2;
+        padding: 1rem;
+    }
+}
+
+#np-card {
+    animation-name: fadeInNp;
+    animation-duration: 2s;
+}
+
+@keyframes fadeInBronze {
+    0% {
+        background-color: var(--secondary-color);
+        margin: 20px;
+        padding: 20px;
+    }
+
+    50% {
+        background-color: rgba(94, 64, 5, 0.226);
+    }
+
+    100% {
+        background-color: var(--secondary-color);
+        margin: 2;
+        padding: 1rem;
+    }
+}
+
+#bronze-card {
+    animation-name: fadeInBronze;
+    animation-duration: 2.6s;
+}
+
+@keyframes fadeInSilver {
+    0% {
+        background-color: var(--secondary-color);
+        margin: 20px;
+        padding: 20px;
+    }
+
+    50% {
+        background-color: rgba(94, 91, 84, 0.300);
+    }
+
+    100% {
+        background-color: var(--secondary-color);
+        margin: 2;
+        padding: 1rem;
+    }
+}
+
+#silver-card {
+    animation-name: fadeInSilver;
+    animation-duration: 3.2s;
+}
+
+@keyframes fadeInGold {
+    0% {
+        background-color: var(--secondary-color);
+        margin: 20px;
+        padding: 20px;
+    }
+
+    50% {
+        background-color: rgba(94, 97, 8, 0.230);
+    }
+
+    100% {
+        background-color: var(--secondary-color);
+        margin: 2;
+        padding: 1rem;
+    }
+}
+
+#gold-card {
+    animation-name: fadeInGold;
+    animation-duration: 3.8s;
+}
+
+#form-results {
+    font-size: large;
+    font-weight: 400;
 }
 
 /* FOOTER */
