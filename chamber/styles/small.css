@@ -632,7 +632,7 @@ input:-webkit-autofill {
 
     100% {
         background-color: var(--secondary-color);
-        margin: 2;
+        margin: 2px;
         padding: 1rem;
     }
 }
@@ -655,7 +655,7 @@ input:-webkit-autofill {
 
     100% {
         background-color: var(--secondary-color);
-        margin: 2;
+        margin: 2px;
         padding: 1rem;
     }
 }
@@ -678,7 +678,7 @@ input:-webkit-autofill {
 
     100% {
         background-color: var(--secondary-color);
-        margin: 2;
+        margin: 2px;
         padding: 1rem;
     }
 }
@@ -701,7 +701,7 @@ input:-webkit-autofill {
 
     100% {
         background-color: var(--secondary-color);
-        margin: 2;
+        margin: 2px;
         padding: 1rem;
     }
 }
