@@ -372,6 +372,7 @@ nav {
     margin-top: 1rem;
     border: none;
     border-radius: 5%;
+    grid-area: button;
 }
 
 .learn-btn:hover,
@@ -551,9 +552,6 @@ input:-moz-autofill {
     font-size: large;
     padding: 0.5rem;
     margin: 0px;
-    /* display: flex;
-    flex-direction: column;
-    flex-wrap: wrap; */
     text-align: center;
     gap: 1rem;
 }
@@ -605,21 +603,6 @@ input:-moz-autofill {
 .cta-wrapper p {
     font-size: medium;
 }
-
-/* @keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-} */
-
-/* .membership-card {
-    animation-name: fadeIn;
-    animation-duration: 3s;
-} */
 
 @keyframes fadeInNp {
     0% {
@@ -759,6 +742,7 @@ input:-moz-autofill {
     height: 1rem;
     margin: auto;
     width: 100%;
+    grid-area: filler;
 }
 
 .place-learn-btn {
@@ -772,9 +756,9 @@ input:-moz-autofill {
     margin: 0.5rem;
 }
 
-.place-card-filler {
+/* .place-card-filler {
     grid-area: filler;
-}
+} */
 
 .place-card h2 {
     grid-area: name;
@@ -796,9 +780,7 @@ input:-moz-autofill {
     grid-area: cost;
 }
 
-.learn-btn {
-    grid-area: button;
-}
+/* .learn-btn {grid-area: button;} */
 
 #first-separator {
     margin-bottom: 2rem;
