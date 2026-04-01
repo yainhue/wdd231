@@ -1,0 +1,50 @@
+:root {
+    --bg-color: rgba(213, 222, 218);
+    --text-color: rgba(22, 26, 42);
+    --accent1-color: rgba(103, 144, 142);
+    --accent2-color: rgba(171, 189, 185);
+    --footer-color: rgba(56, 60, 66);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: "Open Sans", 'Times New Roman', Times, serif;
+}
+
+.content {
+    margin: 1rem;
+    margin-top: 3rem;
+}
+
+#bg-color,
+#text-color,
+#accent1-color,
+#accent2-color,
+#footer-color {
+    height: 100px;
+    width: 100px;
+    margin: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+#bg-color {
+    background-color: var(--bg-color);
+}
+
+#text-color {
+    background-color: var(--text-color);
+}
+
+#accent1-color {
+    background-color: var(--accent1-color);
+}
+
+#accent2-color {
+    background-color: var(--accent2-color);
+}
+
+#footer-color {
+    background-color: var(--footer-color);
+}
+
+img {
+    width: 700px;
+}
