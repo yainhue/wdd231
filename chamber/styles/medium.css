@@ -1,4 +1,4 @@
-@media (min-width: 65em) {
+@media (min-width: 40em) {
 
     /* HEADER */
 
@@ -220,21 +220,25 @@
 
     /* MAIN - DISCOVER */
 
-    .place-card figure img {
-        width: 300px;
-        height: 200px;
-        object-fit: cover;
-        margin: 0px;
-    }
-
     .place-card figure img:hover {
         filter: grayscale(50%) blur(1px);
     }
 
-    .grid-area {
-        display: grid;
-        gap: 2rem;
-        grid-template-columns: 1fr 1fr;
+    .place-card figure img {
+        width: 300px;
+        height: 100%;
+        object-fit: cover;
+        margin: 0px;
+    }
+
+    .place-card {
+        grid-template-areas:
+            "filler filler"
+            "name name"
+            "image description"
+            "image address"
+            "image cost"
+            "button button";
     }
 
     /* FOOTER */

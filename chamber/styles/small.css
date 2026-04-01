@@ -374,7 +374,8 @@ nav {
     border-radius: 5%;
 }
 
-.learn-btn:hover {
+.learn-btn:hover,
+.place-learn-btn:hover {
     background-color: var(--button-hover);
     color: white;
     border: none;
@@ -454,7 +455,8 @@ form {
     }
 }
 
-input:-webkit-autofill {
+input:-webkit-autofill,
+input:-moz-autofill {
     -webkit-text-fill-color: #3D405B;
 }
 
@@ -714,6 +716,98 @@ input:-webkit-autofill {
 #form-results {
     font-size: large;
     font-weight: 400;
+}
+
+/* MAIN - DISCOVER */
+
+.grid-area {
+    display: grid;
+    gap: 2rem;
+}
+
+.place-card {
+    background-color: var(--secondary-color);
+    display: grid;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid var(--separator);
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3);
+    gap: 1.5rem;
+    grid-template-areas:
+        "filler"
+        "name"
+        "image"
+        "description"
+        "address"
+        "cost"
+        "button";
+}
+
+.place-card figure {
+    margin: 0px;
+}
+
+.place-card figure img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin: 0px;
+}
+
+.place-card-filler {
+    background-color: var(--main-color);
+    height: 1rem;
+    margin: auto;
+    width: 100%;
+}
+
+.place-learn-btn {
+    background-color: var(--footer-color);
+    color: var(--separator);
+    font-weight: bold;
+    padding: 0.5rem;
+    /* width: 89%; */
+    border: none;
+    overflow: hidden;
+    margin: 0.5rem;
+}
+
+.place-card-filler {
+    grid-area: filler;
+}
+
+.place-card h2 {
+    grid-area: name;
+}
+
+.place-figure {
+    grid-area: image;
+}
+
+.info-description {
+    grid-area: description;
+}
+
+.info-address {
+    grid-area: address;
+}
+
+.info-cost {
+    grid-area: cost;
+}
+
+.learn-btn {
+    grid-area: button;
+}
+
+#first-separator {
+    margin-bottom: 2rem;
+}
+
+.welcome-msg {
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
 }
 
 /* FOOTER */
