@@ -1,0 +1,95 @@
+@media (min-width: 40em) {
+    /* HEADER */
+
+    header {
+        display: flex;
+        background-color: var(--nav--color);
+        justify-content: space-between;
+    }
+
+    #site-name {
+        margin-top: 1rem;
+    }
+
+    .hamburger-icon {
+        display: none;
+    }
+
+    nav {
+        display: block;
+    }
+
+    .nav-list {
+        margin-top: 1rem;
+        display: flex;
+        background-color: var(--main-color);
+        padding: 0.3rem;
+        margin-right: 2rem;
+    }
+
+    .nav-list li {
+        border: none;
+    }
+
+    li a {
+        padding: 0 10px 0 10px;
+    }
+
+    /* HOME.HTML */
+
+    .tagline-div {
+        gap: 3%;
+    }
+
+    .tagline-div h2 {
+        font-size: clamp(23px, 7vw, 58px);
+        max-width: 500px;
+    }
+
+    .tagline-div img {
+        max-width: 500px;
+        height: auto;
+        flex: 1;
+        width: 100%;
+    }
+
+    .showcase-div {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    /* CATALOG.HTML */
+
+    .filter-div {
+        flex-direction: row;
+    }
+
+    .catalog-div {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        margin-left: 1rem;
+        margin-right: 1rem;
+        justify-items: center;
+    }
+
+    .membership-modal-open {
+        max-width: 50%;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .footer-contact {
+        margin-left: 2rem;
+    }
+
+    .copyright-wrapper {
+        margin-right: 2rem;
+    }
+}

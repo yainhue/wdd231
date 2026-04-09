@@ -1,0 +1,227 @@
+[
+    {
+        "id": "A1B2C",
+        "model": "Lumina X100",
+        "price": 499,
+        "shortdesc": "Compact camera with advanced low-light performance for everyday photography.",
+        "longdesc": "The Lumina X100 is designed for travelers and enthusiasts, offering superior low-light performance, portability, and intuitive controls for capturing stunning images in any environment.",
+        "year": 2024,
+        "features": [
+            "Wi-Fi connectivity",
+            "Touchscreen LCD",
+            "Fast autofocus"
+        ],
+        "image": "images/produto1.webp",
+        "category": "compact"
+    },
+    {
+        "id": "D3E4F",
+        "model": "Lumina Pro DSLR",
+        "price": 899,
+        "shortdesc": "Professional-grade DSLR with 4K video support and robust build quality.",
+        "longdesc": "The Lumina Pro DSLR delivers exceptional image quality, advanced video capabilities, and a durable body, making it ideal for professionals seeking versatility and reliability.",
+        "year": 2023,
+        "features": [
+            "Dual memory slots",
+            "Weather-sealed body",
+            "Interchangeable lenses"
+        ],
+        "image": "images/produto2.webp",
+        "category": "professional"
+    },
+    {
+        "id": "G5H6I",
+        "model": "Lumina Travel",
+        "price": 299,
+        "shortdesc": "Lightweight travel camera with wide-angle lens for scenic shots.",
+        "longdesc": "Perfect for adventurers, the Lumina Travel combines portability with a wide-angle lens, ensuring breathtaking landscapes and group photos wherever you go.",
+        "year": 2022,
+        "features": [
+            "Wide-angle lens",
+            "Compact design",
+            "USB-C charging"
+        ],
+        "image": "images/produto3.webp",
+        "category": "compact"
+    },
+    {
+        "id": "J7K8L",
+        "model": "Lumina Studio",
+        "price": 1099,
+        "shortdesc": "High-resolution camera tailored for studio photography and portraits.",
+        "longdesc": "The Lumina Studio offers unmatched clarity and detail, optimized for portrait and studio work, with advanced lighting controls and customizable settings.",
+        "year": 2025,
+        "features": [
+            "High megapixel sensor",
+            "Customizable presets",
+            "Tethered shooting"
+        ],
+        "image": "images/produto4.webp",
+        "category": "professional"
+    },
+    {
+        "id": "M9N0O",
+        "model": "Lumina ActionCam",
+        "price": 399,
+        "shortdesc": "Durable action camera built for sports and outdoor adventures.",
+        "longdesc": "Engineered for thrill-seekers, the Lumina ActionCam is waterproof, shockproof, and delivers crisp video and photos even in extreme conditions.",
+        "year": 2024,
+        "features": [
+            "Waterproof housing",
+            "Image stabilization",
+            "Voice control"
+        ],
+        "image": "images/produto5.webp",
+        "category": "compact"
+    },
+    {
+        "id": "P1Q2R",
+        "model": "Lumina Compact S",
+        "price": 199,
+        "shortdesc": "Affordable compact camera with smart auto modes for beginners.",
+        "longdesc": "The Lumina Compact S is perfect for beginners, offering easy-to-use auto modes, lightweight design, and reliable performance at an accessible price.",
+        "year": 2021,
+        "features": [
+            "Smart auto mode",
+            "Lightweight body",
+            "Built-in flash"
+        ],
+        "image": "images/produto6.webp",
+        "category": "compact"
+    },
+    {
+        "id": "S3T4U",
+        "model": "Lumina Mirrorless Z",
+        "price": 749,
+        "shortdesc": "Mirrorless camera with fast shooting speed and interchangeable lenses.",
+        "longdesc": "The Lumina Mirrorless Z combines speed, flexibility, and compactness, making it a favorite among enthusiasts who want DSLR performance in a smaller body.",
+        "year": 2023,
+        "features": [
+            "Interchangeable lenses",
+            "Silent shutter",
+            "High-speed burst"
+        ],
+        "image": "images/produto7.webp",
+        "category": "professional"
+    },
+    {
+        "id": "V5W6X",
+        "model": "Lumina Vintage",
+        "price": 349,
+        "shortdesc": "Retro-inspired camera with modern digital features and classic design.",
+        "longdesc": "Blending nostalgia with innovation, the Lumina Vintage offers a retro aesthetic while delivering modern digital performance and connectivity.",
+        "year": 2020,
+        "features": [
+            "Retro design",
+            "Digital viewfinder",
+            "Bluetooth sharing"
+        ],
+        "image": "images/produto8.webp",
+        "category": "compact"
+    },
+    {
+        "id": "Y7Z8A",
+        "model": "Lumina 360",
+        "price": 599,
+        "shortdesc": "Camera capable of capturing immersive 360-degree photos and videos.",
+        "longdesc": "The Lumina 360 lets you capture immersive content, perfect for VR and social media, with easy sharing and editing tools included.",
+        "year": 2024,
+        "features": [
+            "360-degree lens",
+            "VR-ready output",
+            "Mobile app sync"
+        ],
+        "image": "images/produto9.webp",
+        "category": "compact"
+    },
+    {
+        "id": "B9C0D",
+        "model": "Lumina Macro",
+        "price": 459,
+        "shortdesc": "Specialized camera for close-up macro photography with precision focus.",
+        "longdesc": "The Lumina Macro is tailored for detail lovers, offering precision focus and specialized optics to capture the smallest subjects with clarity.",
+        "year": 2023,
+        "features": [
+            "Macro lens",
+            "Precision focus",
+            "Ring light support"
+        ],
+        "image": "images/produto10.webp",
+        "category": "compact"
+    },
+    {
+        "id": "E1F2G",
+        "model": "Lumina Wildlife",
+        "price": 799,
+        "shortdesc": "Telephoto camera designed for wildlife and long-distance photography.",
+        "longdesc": "The Lumina Wildlife is built for nature enthusiasts, featuring a powerful telephoto lens and rugged design to capture distant subjects with ease.",
+        "year": 2025,
+        "features": [
+            "Telephoto zoom",
+            "Silent operation",
+            "Weather resistance"
+        ],
+        "image": "images/produto11.webp",
+        "category": "professional"
+    },
+    {
+        "id": "H3I4J",
+        "model": "Lumina Pocket",
+        "price": 249,
+        "shortdesc": "Ultra-compact pocket camera with instant sharing features.",
+        "longdesc": "The Lumina Pocket is small enough to fit anywhere, offering instant sharing, quick snapshots, and reliable performance for everyday use.",
+        "year": 2022,
+        "features": [
+            "Pocket size",
+            "Instant sharing",
+            "Rechargeable battery"
+        ],
+        "image": "images/produto12.webp",
+        "category": "compact"
+    },
+    {
+        "id": "K5L6M",
+        "model": "Lumina Hybrid",
+        "price": 649,
+        "shortdesc": "Hybrid camera combining photo and video excellence in one device.",
+        "longdesc": "The Lumina Hybrid is designed for creators, offering balanced photo and video performance, making it versatile for content production.",
+        "year": 2024,
+        "features": [
+            "Dual-mode capture",
+            "4K video",
+            "External mic support"
+        ],
+        "image": "images/produto13.webp",
+        "category": "professional"
+    },
+    {
+        "id": "N7O8P",
+        "model": "Lumina Explorer",
+        "price": 559,
+        "shortdesc": "Adventure-ready camera with GPS and rugged build for explorers.",
+        "longdesc": "The Lumina Explorer is built tough, with GPS tracking and rugged design, perfect for documenting journeys in challenging environments.",
+        "year": 2023,
+        "features": [
+            "GPS tracking",
+            "Shockproof body",
+            "Long battery life"
+        ],
+        "image": "images/produto14.webp",
+        "category": "compact"
+    },
+    {
+        "id": "Q9R0S",
+        "model": "Lumina SmartCam",
+        "price": 329,
+        "shortdesc": "Smart camera with AI-powered scene detection and auto adjustments.",
+        "longdesc": "The Lumina SmartCam uses AI to detect scenes and adjust settings automatically, ensuring optimal results without manual effort.",
+        "year": 2025,
+        "features": [
+            "AI scene detection",
+            "Cloud backup",
+            "Face recognition"
+        ],
+        "image": "images/produto15.webp",
+        "category": "compact"
+    }
+]

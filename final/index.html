@@ -4,12 +4,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Individual Project Site Plan</title>
+    <title>Lumina Homepage</title>
     <meta name="author" content="Yain Huento">
+    <meta name="description"
+        content="Explore Lumina cameras designed for professionals and adventurers, delivering stunning photos, videos, and creative freedom.">
+    <meta property="og:title" content="Lumina Homepage">
+    <meta property="og:description"
+        content="Discover Lumina cameras and create your story with stunning photos and videos.">
+    <meta property="og:image" content="images/hero.webp">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yainhue.github.io/wdd231/final/">
+    <script type="module" src="scripts/index.mjs"></script>
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico">
 </head>
 
 <body>
-
+    <header>
+        <div class="logo-wrapper">
+            <div class="span-wrapper">
+                <img src="images/logo.png" alt="Logo of Lumina" class="logo">
+            </div>
+            <button class="hamburger-icon" aria-label="Open menu"></button>
+        </div>
+        <nav id="base-nav">
+            <ul class="nav-list">
+                <li><a href="./index.html" id="active">Home</a></li>
+                <li><a href="./catalog.html">Catalog</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+            <a href="#"></a>
+        </nav>
+    </header>
+    <main>
+        <div class="hero-div">
+            <div class="tagline-div">
+                <img src="images/hero.webp" alt="Photographer on mountain peak at sunrise">
+                <h2>Capture Your World, Create Your Story</h2>
+            </div>
+            <!-- <button class="cta-button">Shop Now</button> -->
+            <a class="cta-button" href="catalog.html">Shop Now</a>
+        </div>
+        <h1>Home</h1>
+        <p class="welcome-msg">...</p>
+        <h2 id="main-h2">Featured Cameras</h2>
+        <div class="showcase-div">
+            <div class="product-div">
+                <img src="images/produto1.webp" alt="A photo of Lumina X100" loading="lazy">
+                <div class="product-info">
+                    <h3>Lumina X100</h3>
+                    <p><em>Compact camera with advanced low-light performance for everyday photography.</em></p>
+                    <a class="product-btn" href="catalog.html">Shop Now</a>
+                </div>
+            </div>
+            <div class="product-div">
+                <img src="images/produto8.webp" alt="A photo of Lumina Vintage" loading="lazy">
+                <div class="product-info">
+                    <h3>Lumina Vintage</h3>
+                    <p><em>Retro-inspired camera with modern digital features and classic design.</em></p>
+                    <a class="product-btn" href="catalog.html">Shop Now</a>
+                </div>
+            </div>
+            <div class="product-div">
+                <img src="images/produto11.webp" alt="A photo of Lumina Wildlife" loading="lazy">
+                <div class="product-info">
+                    <h3>Lumina Wildlife</h3>
+                    <p><em>Telephoto camera designed for wildlife and long-distance photography.</em></p>
+                    <a class="product-btn" href="catalog.html">Shop Now</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="copyright-wrapper">
+            <p>Lumina</p>
+            <p id="currentyear">currentyear</p>
+        </div>
+        <div class="socials-wrapper">
+            <a href="#">
+                <img src="images/youtube.svg" alt="Youtube Icon">
+            </a>
+            <a href="#">
+                <img src="images/twitter.svg" alt="Twitter Icon">
+            </a>
+            <a href="#">
+                <img src="images/linkedin.svg" alt="Linkedin Icon">
+            </a>
+        </div>
+        <div class="class-details">
+            <p>WDD231 Final Project</p>
+            <p id="lastmod-date">lastmod-date</p>
+            <a href="#">Video Demostration (GRABAR!)</a>
+        </div>
+    </footer>
 </body>
 
 </html>

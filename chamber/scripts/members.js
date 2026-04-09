@@ -6,6 +6,7 @@ const members = [];
 const fetchMembers = async () => {
     const response = await fetch("data/members.json")
     const members = await response.json();
+    console.log(members)
     console.log("=== members fetched correctly. ===")
     return members
 }
@@ -17,6 +18,7 @@ function CreaterMemCards(members) {
 
     // create cards
     console.log("=== creating cards ===")
+    console.log(members)
     // for (const t in members) {
     // members.forEach((t) => {
     Object.values(members).forEach(t => {
