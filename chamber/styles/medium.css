@@ -88,10 +88,6 @@
     .cards-flex {
         display: grid;
         grid-template-columns: 3fr 1fr 1fr;
-
-        @media (max-width: 1000px) {
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        }
     }
 
     .business-wrapper {
@@ -161,11 +157,6 @@
     .membership-containers {
         display: grid;
         grid-template-columns: 1fr 1fr;
-
-        @media (max-width: 1000px) {
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        }
-
         margin: 0px;
         gap: 2rem;
     }
@@ -174,21 +165,17 @@
         margin-top: 2rem;
     }
 
-    form {
+    form input[type=text],
+    form input[type=tel],
+    form input[type=date],
+    form input[type=email],
+    form select,
+    form textarea {
+        width: 90%;
+    }
 
-        input[type=text],
-        input[type=tel],
-        input[type=date],
-        input[type=email],
-        select,
-        textarea {
-            width: 90%;
-        }
-
-        input[type=submit] {
-            width: 50%;
-        }
-
+    form input[type=submit] {
+        width: 50%;
     }
 
 

@@ -5,8 +5,6 @@
     --secondary-color: rgb(238, 237, 237);
     --separator: rgb(179, 177, 177);
     --button-hover: #01386e;
-
-    /* background-color: black; */
 }
 
 * {
@@ -395,65 +393,64 @@ nav {
 form {
     background-color: var(--secondary-color);
     padding: 1rem;
+}
 
+form label {
+    display: block;
+    font-size: medium;
+    color: var(--footer-color);
+    padding-top: .2rem;
+    font-weight: 500;
+    margin-top: 1rem;
+}
 
-    label {
-        display: block;
-        font-size: medium;
-        color: var(--footer-color);
-        padding-top: .2rem;
-        font-weight: 500;
-        margin-top: 1rem;
-    }
+form h3 {
+    font-size: large;
+    color: var(--main-color);
+    margin: 1.5rem 0 .2rem 0;
+    border-bottom: 1px solid #eee;
+    text-decoration: underline 1px solid var(--main-selected);
+}
 
-    h3 {
-        font-size: large;
-        color: var(--main-color);
-        margin: 1.5rem 0 .2rem 0;
-        border-bottom: 1px solid #eee;
-        text-decoration: underline 1px solid var(--main-selected);
-    }
+form input[type=text],
+form input[type=tel],
+form input[type=date],
+form input[type=email],
+form select,
+form textarea {
+    display: block;
+    margin: .1rem 0 1rem 0;
+    padding: .3rem;
+    border: 1px solid #999;
+    border-radius: 4px;
+    border-left-width: 5px;
+    border-left-color: #555;
+    font-size: 1rem;
+    color: #3D405B;
+    width: 250px;
+}
 
-    input[type=text],
-    input[type=tel],
-    input[type=date],
-    input[type=email],
-    select,
-    textarea {
-        display: block;
-        margin: .1rem 0 1rem 0;
-        padding: .3rem;
-        border: 1px solid #999;
-        border-radius: 4px;
-        border-left-width: 5px;
-        border-left-color: #555;
-        font-size: 1rem;
-        color: #3D405B;
-        width: 250px;
-    }
+form input:focus {
+    border-left-color: var(--main-color);
+    outline: none;
+}
 
-    input:focus {
-        border-left-color: var(--main-color);
-        outline: none;
-    }
+form input[type=submit] {
+    background-color: var(--main-color);
+    color: var(--separator);
+    font-weight: bold;
+    padding: 1rem;
+    width: 200px;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 5%;
+}
 
-    input[type=submit] {
-        background-color: var(--main-color);
-        color: var(--separator);
-        font-weight: bold;
-        padding: 1rem;
-        width: 200px;
-        margin-top: 1rem;
-        border: none;
-        border-radius: 5%;
-    }
-
-    input[type=submit]:hover {
-        background-color: var(--button-hover);
-        color: white;
-        border: none;
-        font-weight: bold;
-    }
+form input[type=submit]:hover {
+    background-color: var(--button-hover);
+    color: white;
+    border: none;
+    font-weight: bold;
 }
 
 input:-webkit-autofill,
@@ -756,10 +753,6 @@ input:-moz-autofill {
     margin: 0.5rem;
 }
 
-/* .place-card-filler {
-    grid-area: filler;
-} */
-
 .place-card h2 {
     grid-area: name;
 }
@@ -779,8 +772,6 @@ input:-moz-autofill {
 .info-cost {
     grid-area: cost;
 }
-
-/* .learn-btn {grid-area: button;} */
 
 #first-separator {
     margin-bottom: 2rem;
