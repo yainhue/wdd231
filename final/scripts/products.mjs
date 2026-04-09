@@ -1,6 +1,4 @@
-// const toggleButton = document.querySelector(".toggle-view");
 const mainGrid = document.querySelector(".catalog-div")
-const businessWrapper = document.querySelector(".business-wrapper")
 const products = [];
 const modal = document.querySelector(".membership-modal");
 const closeModal = document.querySelector(".close-button");
@@ -10,11 +8,23 @@ const membershipImg = document.querySelector(".membership-img")
 const membershipYear = document.querySelector(".membership-details-year")
 
 const fetchProducts = async () => {
-    const response = await fetch("data/products.json")
-    const products = await response.json();
-    console.log("=== products fetched correctly. ===")
-    return products
-}
+    try {
+        const response = await fetch("data/products.json");
+
+        if (!response.ok) {
+            throw new Error(`Error ${response.status}`);
+        }
+
+        const products = await response.json();
+        console.log("=== products fetched correctly. ===");
+        return products;
+
+    } catch (error) {
+        console.error("Error fetching products:", error);
+        return []; // return an empty string so that the code doesn't break
+    }
+};
+
 
 function CreaterProductCards(products) {
     // clear previous cards
@@ -96,114 +106,6 @@ function CreaterProductCards(products) {
     console.log("=== cards succesfuly created ===")
 }
 
-function CreateShowcaseCards(products) {
-
-    // create cards
-    console.log("=== creating cards ===")
-    let done = []
-    for (let i = 0; i < 3;) {
-        let t = null;
-        while (t == null) {
-            let keys = Object.keys(products);
-            let randIndex = Math.floor(Math.random() * keys.length);
-            let selection = keys[randIndex];
-            if (!done.includes(selection)) {
-                console.log(`=== trying member${selection} ===`)
-                if (products[selection].rank == "Gold" || products[selection].rank == "Silver") {
-                    t = products[selection];
-                    done.push(selection)
-                    // DEBUG
-                    console.log(`=== ${selection} is a ${products[selection].rank} member ===`)
-                }
-
-                // DEBUG:
-                else {
-                    console.log(`=== ${selection} is a ${products[selection].rank} member ===`)
-                }
-            }
-        }
-
-
-        // DEBUG:
-        console.log(`=== creating card ${i} ===`)
-
-        // ----
-
-        // card-contents
-        const cardDiv = document.createElement("div");
-        cardDiv.className = ("business-card");
-        businessWrapper.appendChild(cardDiv);
-
-        // ----
-
-        // h3
-        const h3 = document.createElement("h3");
-        h3.textContent = `${t.name}`;
-        cardDiv.appendChild(h3);
-
-        // tagline
-        const tagline = document.createElement("p");
-        tagline.textContent = `${t.tagline}`;
-        tagline.className = ("business-tagl");
-        cardDiv.appendChild(tagline);
-
-        // rank
-        const rank = document.createElement("p");
-        rank.textContent = `${t.rank}`;
-        rank.className = ("business-rank");
-        cardDiv.appendChild(rank);
-
-        // line
-        const cardLine = document.createElement("div");
-        cardLine.className = ("business-line");
-        cardDiv.appendChild(cardLine);
-
-        // ----
-
-        // business-info
-        const cardBusInfo = document.createElement("div");
-        cardBusInfo.className = ("business-info");
-        cardDiv.appendChild(cardBusInfo);
-
-        // image
-        const image = document.createElement("img");
-        Object.assign(image, {
-            src: t.image,
-            alt: `Logo of ${t.name}`,
-            loading: "lazy"
-        });
-        image.className = ("business-logo");
-        cardBusInfo.appendChild(image);
-
-        // ----
-
-        // business-contact
-        const cardBusContact = document.createElement("div");
-        cardBusContact.className = ("business-contact");
-        cardBusInfo.appendChild(cardBusContact);
-
-        // EMAIL
-        const email = document.createElement("p");
-        email.innerHTML = `EMAIL: <span class="business-email">${t.email}</span>`;
-        cardBusContact.appendChild(email);
-
-        // PHONE
-        const phone = document.createElement("p");
-        phone.innerHTML = `PHONE: <span class="business-email">${t.phone}</span>`;
-        cardBusContact.appendChild(phone);
-
-        // URL
-        const url = document.createElement("p");
-        url.innerHTML = `URL: <span class="business-email">${t.website}</span>`;
-        cardBusContact.appendChild(url);
-
-        i++
-    };
-    // };
-
-    console.log("=== cards succesfuly created ===")
-}
-
 export const displayProducts = async () => {
     if (mainGrid != null) {
         console.log("=== mainGrid != null ===")
@@ -214,11 +116,6 @@ export const displayProducts = async () => {
             modal.classList.toggle("membership-modal-open")
             console.log("modal.close();");
         });
-    }
-    else if (businessWrapper != null) {
-        console.log("=== businessWrapper != null ===")
-        const products = await fetchProducts();
-        CreateShowcaseCards(products);
     }
 }
 
@@ -262,7 +159,6 @@ export const populateModels = async () => {
     products.forEach((p) => {
 
         const modelsSelection = document.querySelector("#membership-lvl");
-        // const select = document.getElementById("product");
 
         // create option
         const model = document.createElement("option");

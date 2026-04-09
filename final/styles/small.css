@@ -7,7 +7,7 @@
     --accent2-color: rgba(171, 189, 185);
     --footer-bg-color: rgba(56, 60, 66);
     --divider-line-color: rgb(136, 136, 136);
-    --footer-txt-color: var(--accent2-color);
+    --footer-txt-color: var(--bg-color);
 
     --base-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 
@@ -145,6 +145,7 @@ main {
 
 h1 {
     font-size: 27.5px;
+    text-align: center;
 }
 
 .divider-line {
@@ -211,10 +212,6 @@ h1 {
 
 .cta-button:hover {
     color: var(--bg-color);
-}
-
-h1 {
-    text-align: center;
 }
 
 .welcome-msg {
@@ -422,8 +419,7 @@ h1 {
     display: flex;
     align-items: flex-start;
     flex-direction: row;
-    /* align-items: center; */
-    justify-content: space-evenly;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 1rem;
 }
@@ -433,8 +429,9 @@ form {
     flex-direction: column;
     padding: 1rem;
     max-width: 430px;
-    /* margin: auto; */
     flex: 1;
+    margin: auto;
+    margin-right: 0.1rem;
 }
 
 form label {
@@ -446,7 +443,7 @@ form label {
     margin-top: 1rem;
 }
 
-form h3 {
+form h2 {
     font-size: large;
     color: var(--main-color);
     margin: 1rem 0 0 0;
@@ -508,11 +505,11 @@ input:-moz-autofill {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    /* margin: auto; */
+    margin: auto;
+    margin-left: 0.1rem;
     margin-top: 4rem;
     flex: 1;
     max-width: 400px;
-
 }
 
 .map-div img {
@@ -541,6 +538,8 @@ input:-moz-autofill {
     font-weight: 400;
     margin-top: var(--base-margin);
     color: var(--footer-bg-color);
+    margin-left: auto;
+    margin-right: 60%;
 }
 
 /* FOOTER */
@@ -549,11 +548,11 @@ footer {
     display: block;
     background-color: var(--footer-bg-color);
     color: var(--footer-txt-color);
-    margin: 0;
+    /* margin: 0; */
     padding-top: var(--base-margin-xs);
     padding-bottom: var(--base-margin);
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 footer a {

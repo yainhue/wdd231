@@ -78,18 +78,6 @@
     }
 
     footer {
-        display: flex;
-        justify-content: space-between;
-        margin: 0;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-    }
-
-    .footer-contact {
-        margin-left: 2rem;
-    }
-
-    .copyright-wrapper {
-        margin-right: 2rem;
+        padding-top: 2rem;
     }
 }
